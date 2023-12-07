@@ -42,7 +42,7 @@ export default function Home() {
           content="Your go-to destination for stylish haircuts and grooming services in Samarkand."
         />
         <meta name="twitter:image" content="url_to_your_logo_image" />
-        <meta property="og:image:secure_url" content={`${logo.src}`} />
+        <meta property="og:image:secure_url" content={`/images/logoReal.png`} />
 
         <link
           rel="shortcut icon"
