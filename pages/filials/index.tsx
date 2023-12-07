@@ -60,7 +60,7 @@ function Index() {
             variants={variants}
             initial="hidden"
             animate="show"
-            className="max-w-[480px] h-full filialsBg  gap-4 rounded-2xl  mx-auto overflow-hidden z-10 relative p-4 "
+            className="max-w-[480px] h-full bgFil  gap-4 rounded-2xl  mx-auto overflow-hidden z-10 relative p-4 "
           >
             <Link href={"/"} className="text-2xl">
               <BiArrowBack />
@@ -77,7 +77,7 @@ function Index() {
                 initial={{ x: 0, y: 400, opacity: 0 }}
                 animate={{ x: 0, y: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: 0.5, type: "tween" }}
-                className=" w-full sm:w-[420px] flex justify-between items-center  mx-auto h-36 bg-[#FF9800] mb-4 rounded-xl bgFilialOne relative  px-4 py-2  "
+                className=" w-full sm:w-[420px] flex justify-between items-center  mx-auto h-36  mb-4 rounded-xl bgFilialOne relative  px-4 py-2  "
                 key={index}
               >
                 <div className="w-full h-3/4 flex flex-col justify-between items-start ">
@@ -99,9 +99,6 @@ function Index() {
                         ЗАПИСЬ
                       </button>
                     </Link>
-                    {/* <div className="w-10 h-10 border border-white rounded-full flex items-center justify-center bg-white relative z-20 ">
-                      <GoLocation className="text-xl" />
-                    </div> */}
                   </div>
                 </div>
               </motion.div>
