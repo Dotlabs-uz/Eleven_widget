@@ -31,7 +31,7 @@ export default function Home() {
           property="og:description"
           content="Your go-to destination for stylish haircuts and grooming services in Samarkand."
         />
-        <meta property="og:image" content="https://precious-khapse-8b1959.netlify.app/_next/static/media/logoReal.98443783.png" />
+        <meta property="og:image" content="https://static.booksy.com/static/live/covers/barbers.jpg" />
         <meta property="og:url" content="url_to_your_website" />
         <meta property="og:type" content="website" />
 
