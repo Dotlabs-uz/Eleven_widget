@@ -31,7 +31,7 @@ export default function Home() {
           property="og:description"
           content="Your go-to destination for stylish haircuts and grooming services in Samarkand."
         />
-        <meta property="og:image" content="url_to_your_logo_image" />
+        <meta property="og:image" content="https://precious-khapse-8b1959.netlify.app/_next/static/media/logoReal.98443783.png" />
         <meta property="og:url" content="url_to_your_website" />
         <meta property="og:type" content="website" />
 
@@ -42,10 +42,10 @@ export default function Home() {
           content="Your go-to destination for stylish haircuts and grooming services in Samarkand."
         />
         <meta name="twitter:image" content="url_to_your_logo_image" />
-        <meta
+        {/* <meta
           property="og:image:secure_url"
           content="https://elevenshaving.com/cdn/shop/t/2/assets/logo.png?v=153262803562352942881563135064"
-        />
+        /> */}
 
         <link
           rel="shortcut icon"
