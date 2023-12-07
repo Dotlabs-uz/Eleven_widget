@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
+
+* {
+  scroll-behavior: smooth;
+}
+
+.bgFilialOne {
+  background: url("../public/images/filial2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #5b5b5b;
+  background-position: center 80%;
+}
+
+.bgFilialOne::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #22201b;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  z-index: 5;
+  border-radius: 8px;
+}
+
+.bgFilialTwo::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #5b6aa6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  z-index: 5;
+}
+
+.bgSkeleton {
+  width: 100%;
+  height: 100%;
+  background: url("../public/images/logoReal.png") no-repeat center cover;
+}
+
+select option {
+  background-color: #101010 !important;
+}
+
+.btn:hover {
+  border: 2px solid #D7A92D !important;
+  background-color: #101010 !important;
+  transition: 0.3s all linear;
+}
+
+.customBtn {
+  box-shadow: 0 0 13px 3px #D7A92D;
+  color: white;
+  font-weight: 600;
+  transition: 0.2s all linear;
+}
+
+.customBtn:hover {
+  box-shadow: 0 0 13px 8px #D7A92D;
+  color: black;
+  transform: scale(1.05);
+}
+
+.academyBtn {
+  box-shadow: 0 0 7px 2px #D7A92D;
+  color: white;
+  font-weight: 600;
+  transition: 0.2s all linear;
+}
+
+.academyBtn:hover {
+  box-shadow: 0 0 8px 3px #D7A92D;
+  color: black;
+  transform: scale(1.01);
+}
+
+
+.bg {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0.25turn, #ffffffa3, #0000003a);
+}
+
+/* new  */
+
+body {
+  background-color: #0a0d10;
+}
+
+.customBg {
+  width: 100%;
+  height: 680px;
+  background: url("../public/images/new/photo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 100%;
+}
+
+.anotherBg {
+  width: 100%;
+  background: url("../public/images/new/photo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 100%;
+}
+
+.customBg::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("https://thumb.tildacdn.com/tild3266-6263-4437-b738-373734323938/-/format/webp/_.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+}
+
+.customBgTwo {
+  background: url("../public/images/new/_.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logoText {
+  font-family: "Chonburi", serif;
+  font-weight: 900;
+  position: relative;
+  top: 2px;
+}
+
+.filialsBg {
+  background: linear-gradient(160deg, #fdfdfd6d, #5f5a5a2a, #00000027);
+  backdrop-filter: blur(8px);
+  text-align: center;
+}
+
+
+
+.navText {
+  color: #fff;
+  transition: 0.3s all linear;
+}
+
+.navText:hover {
+  color: #d7a92d;
+}
+
+.elevenNumber {
+  font-family: "Chonburi", serif;
+  font-weight: 900;
+}
