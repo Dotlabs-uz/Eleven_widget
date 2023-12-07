@@ -44,7 +44,7 @@ export default function Home() {
         <meta name="twitter:image" content="url_to_your_logo_image" />
         <meta
           property="og:image:secure_url"
-          content={`https://precious-khapse-8b1959.netlify.app/_next/static/media/logoReal.98443783.png`}
+          content="https://precious-khapse-8b1959.netlify.app/_next/static/media/logoReal.98443783.png"
         />
 
         <link
