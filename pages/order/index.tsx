@@ -139,7 +139,7 @@ function Order() {
               <FormLabel className="text-white">Введите свои данные</FormLabel>
               <Input
                 type="text"
-                placeholder="напиши свое имя"
+                placeholder="напишите свое имя"
                 size={"md"}
                 outline="none"
                 value={userName}
@@ -153,7 +153,7 @@ function Order() {
                 className="w-full mb-3 py-[16px] max-2xl:py-1 px-6 max-2xl:px-4  max-xl:py-[8px] max-xl:px-3 border text-white  border-[#D7A92D] rounded-md bg-[#101010] "
                 mask="+\9\98 (99) 999-99-99"
                 name="phone"
-                placeholder="Напиши свой телефон"
+                placeholder="Напишите свой телефон"
                 required
                 value={userPhone}
                 onChange={(e: any) => setUserPhone(e.target.value)}
