@@ -177,7 +177,7 @@ function Order() {
           <div className="w-full h-full border-2 border-[#D7A92D] p-3 rounded-xl  ">
             <div className="w-full h-full border-b-2 border-[#D7A92D] pb-3 ">
               <h1 className="text-white text-2xl font-medium ">
-                БАРБЕРШОП eleven
+                БАРБЕРШОП eleven 11
               </h1>
               <h2 className="text-[#808080] text-lg flex items-center gap-2 ">
                 {filName}{" "}
@@ -251,7 +251,7 @@ function Order() {
             borderBottomColor={"#FE9800"}
             className="bg-[#101010] text-white"
           >
-            БАРБЕРШОП eleven
+            БАРБЕРШОП eleven 11
           </DrawerHeader>
           <DrawerBody className=" bg-[#101010] text-white  ">
             <div className="w-full  text-left ">
