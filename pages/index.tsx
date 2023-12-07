@@ -42,7 +42,10 @@ export default function Home() {
           content="Your go-to destination for stylish haircuts and grooming services in Samarkand."
         />
         <meta name="twitter:image" content="url_to_your_logo_image" />
-        <meta property="og:image:secure_url" content={`/images/logoReal.png`} />
+        <meta
+          property="og:image:secure_url"
+          content={`https://precious-khapse-8b1959.netlify.app/_next/static/media/logoReal.98443783.png`}
+        />
 
         <link
           rel="shortcut icon"
@@ -220,7 +223,7 @@ export default function Home() {
                 <h1 className="text-[#BBB]">График работы</h1>
                 <div>
                   <span className="text-[#BBB]">Пн-Вс </span>
-                  <span className="text-[#BBB]">10:00 - 22:00</span>
+                  <span className="text-[#BBB]">08:00 - 22:00</span>
                 </div>
               </div>
             </div>
@@ -239,7 +242,7 @@ export default function Home() {
                 <h1 className="text-[#BBB]">График работы</h1>
                 <div>
                   <span className="text-[#BBB]">Пн-Вс </span>
-                  <span className="text-[#BBB]">10:00 - 23:00</span>
+                  <span className="text-[#BBB]">08:00 - 23:00</span>
                 </div>
               </div>
             </div>
