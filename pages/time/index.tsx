@@ -203,7 +203,7 @@ function Index() {
                 size={30}
                 aria-hidden="true"
                 className={cn(
-                  isThisMonth(new Date(currentMonth)) && "text-gray-300"
+                  isThisMonth(new Date(currentMonth)) && "text-[#434343]" || "text-[#D7A92D]"
                 )}
               />
             </button>
