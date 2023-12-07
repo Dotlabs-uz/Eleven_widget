@@ -50,9 +50,9 @@ export default function Home() {
         />
         <title>eleven 11</title>
       </Head>
-      <div className="w-full mx-auto  flex  h-20  justify-between items-center filialsBg px-10 py-2 ">
+      <div className="w-full mx-auto flex h-20 justify-between items-center filialsBg px-7 sm:px-10 py-2 ">
         <div className="logo flex items-center gap-4 h-full ">
-          <div className="h-full ml-1 sm:ml-0 ">
+          <div className="h-full ">
             <img
               src={`${logo.src}`}
               alt=""
@@ -79,10 +79,9 @@ export default function Home() {
       </div>
       <header className=" w-full md:h-[450px] lg:h-[540px] flex flex-col-reverse md:flex-row justify-between px-10 z-20 relative mb-10 ">
         <div className=" w-full md:w-[60%] h-full flex flex-col items-start justify-start md:pt-12 lg:pt-16 xl:pt-20 gap-3 relative  ">
-          <h1 className=" text-center  text-4xl xl:text-2xl text-white   z-20 relative ">
-            БАРБЕРШОП{" "}
+          <h1 className=" text-center  text-4xl xl:text-2xl text-white   z-20 relative flex flex-col items-center justify-center w-full sm:items-start sm:flex-row sm:justify-start gap-3 ">
+            Барбершоп{" "}
             <span className="text-[#D7A92D] font-semibold ">
-              {" "}
               eleven <span className="elevenNumber"> 11</span>
             </span>
           </h1>
@@ -91,7 +90,7 @@ export default function Home() {
           </h1>
           <p className=" hidden md:block text-base lg:text-xl text-white  ">
             Барбершоп{" "}
-            <span className="text-[#D7A92D] font-semibold ">
+            <span className="text-[#D7A92D] font-semibold  ">
               eleven <span className="elevenNumber"> 11</span>
             </span>
             - это место, где каждый мужчина <br />
@@ -148,7 +147,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="max-w-[1000px] mx-auto  relative z-20  px-4 anotherBg  border-b-2 border-white mb-5 pb-10"
+        className="max-w-[1000px] mx-auto  relative z-20  px-4 anotherBg   mb-5 pb-10"
         id="gallery"
       >
         <h1 className="text-4xl font-medium mb-6  text-white text-center ">
@@ -200,23 +199,34 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className="w-full max-w-[1000px] mx-auto pb-3">
+      <h1 className="text-white text-3xl mb-3 px-4">
+        eleven <span className="elevenNumber">11</span>
+      </h1>
+      <footer className="w-full max-w-[1000px] mx-auto pb-3 border-t-2 pt-3 border-white ">
         <div className="w-full">
-          <h1 className="text-white text-3xl mb-3 px-4">
-            eleven <span className="elevenNumber">11</span>
-          </h1>
           <div className="w-full mb-2 block sm:flex items-center justify-between border-b-2 border-white ">
-            <div className="w-full h-full leading-5 mb-2 px-4">
-              <span className="text-sm text-[#BBB]  leading-5">ТЦ Atlas</span>
+            <div className="w-full h-full leading-5 mb-2 px-4 pb-2 border-b-2 border-white sm:border-none ">
+              <span className="text-sm text-[#D7A92D] font-bold leading-5">
+                ТЦ Atlas
+              </span>
               <h2 className="text-lg text text-[#BBB]">
                 Cамарканд, Ул. Буюк Ипак Йули, 131B
               </h2>
               <a href="tel:+998954121111" className="text-lg text text-[#BBB]">
                 +998 (95) 412-11-11
               </a>
+              <div>
+                <h1 className="text-[#BBB]">График работы</h1>
+                <div>
+                  <span className="text-[#BBB]">Пн-Вс </span>
+                  <span className="text-[#BBB]">10:00 - 22:00</span>
+                </div>
+              </div>
             </div>
             <div className="w-full h-full leading-5 text-right px-4 mb-3">
-              <span className="text-sm text-[#BBB]">ТРЦ Family Park</span>
+              <span className="text-sm text-[#D7A92D] font-bold ">
+                ТРЦ Family Park
+              </span>
 
               <h2 className="text-lg text text-[#BBB]">
                 Cамарканд, Ул. Нарпайская, 76
@@ -224,19 +234,19 @@ export default function Home() {
               <a href="tel:+998945401111" className="text-lg text text-[#BBB]">
                 +998 (94) 540-11-11
               </a>
-            </div>
-          </div>
-          <div className="w-full h-full flex justify-between items-center px-4 ">
-            <div>
-              <h1 className="text-[#BBB]">График работы</h1>
               <div>
-                <span className="text-[#BBB]">Пн-Вс</span>
-                <span className="text-[#BBB]">10:00 - 23:00</span>
+                <h1 className="text-[#BBB]">График работы</h1>
+                <div>
+                  <span className="text-[#BBB]">Пн-Вс </span>
+                  <span className="text-[#BBB]">10:00 - 23:00</span>
+                </div>
               </div>
             </div>
-            <div>
+          </div>
+          <div className="w-full h-full flex justify-end items-center px-4 ">
+            <div className="flex w-full h-full justify-between items-center ">
               <h1 className="text-[#BBB]">Cоциальные сети</h1>
-              <div className="w-full h-full flex justify-end items-center gap-3 ">
+              <div className="w-[30%] h-full flex justify-end items-center gap-3 ">
                 <a href="#" target="_blank">
                   <LiaTelegramPlane className="text-[#BBB] text-2xl cursor-pointer transition-all duration-500 hover:text-[#FF9800] hover:scale-110 " />
                 </a>
