@@ -411,7 +411,11 @@ function Index() {
                   ))}
                 </div>
                 {notWorking ? (
-                  <p className="text-white uppercase text-xl ">
+                  <p
+                    className={` ${
+                      active ? "text-white" : "text-transparent"
+                    }  uppercase text-xl `}
+                  >
                     этот парикмахер сегодня не работает
                   </p>
                 ) : (

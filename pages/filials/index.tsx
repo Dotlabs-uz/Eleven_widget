@@ -55,7 +55,7 @@ function Index() {
         <title>eleven 11</title>
       </Head>
       <div className="relative  h-[60%]  w-full  bg-[#101010]   pt-10 px-8 py-2 transition-all duration-500 ">
-        <div className="w-full h-[530px]">
+        <div className="w-full h-[530px] huu ">
           <motion.div
             variants={variants}
             initial="hidden"

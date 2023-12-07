@@ -9,6 +9,7 @@
 }
 
 .bgFilialOne {
+
   background: url("../public/images/filial2.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,7 +22,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  background-color: #22201b;
+  background-color: #604f3d67;
   position: absolute;
   top: 0;
   left: 0;
@@ -30,13 +31,7 @@
   border-radius: 8px;
 }
 
-.bgFilialOne:nth-child(2) {
-  background: url("../public/images/filial1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #5b5b5b;
-  background-position: center 80%;
-}
+
 
 .bgFilialTwo::before {
   content: "";
