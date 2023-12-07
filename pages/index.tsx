@@ -223,7 +223,7 @@ export default function Home() {
                 <h1 className="text-[#BBB]">График работы</h1>
                 <div>
                   <span className="text-[#BBB]">Пн-Вс </span>
-                  <span className="text-[#BBB]">08:00 - 22:00</span>
+                  <span className="text-[#BBB]">09:00 - 21:00</span>
                 </div>
               </div>
             </div>
@@ -242,7 +242,7 @@ export default function Home() {
                 <h1 className="text-[#BBB]">График работы</h1>
                 <div>
                   <span className="text-[#BBB]">Пн-Вс </span>
-                  <span className="text-[#BBB]">08:00 - 23:00</span>
+                  <span className="text-[#BBB]">10:00 - 23:00</span>
                 </div>
               </div>
             </div>
