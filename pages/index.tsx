@@ -199,7 +199,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <h1 className="text-white text-3xl mb-3 px-4">
+      <h1 className="text-white text-3xl mb-3 px-4 max-w-[1000px] mx-auto">
         eleven <span className="elevenNumber">11</span>
       </h1>
       <footer className="w-full max-w-[1000px] mx-auto pb-3 border-t-2 pt-3 border-white ">
