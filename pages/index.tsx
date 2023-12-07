@@ -42,6 +42,10 @@ export default function Home() {
           content="Your go-to destination for stylish haircuts and grooming services in Samarkand."
         />
         <meta name="twitter:image" content="url_to_your_logo_image" />
+        <meta
+          property="og:image:secure_url"
+          content="https://click.13bytimati.ru/wp-content/uploads/2023/03/prew.jpg"
+        />
 
         <link
           rel="shortcut icon"
