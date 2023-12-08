@@ -17,6 +17,10 @@ function Index() {
       const response = await axios.get(
         "https://starfish-app-f4ezq.ondigitalocean.app/filials?page=1"
       );
+
+      console.log(response);
+      
+
       setFilialsArr(response.data.results);
     } catch (error) {
       console.error(error);
@@ -27,6 +31,9 @@ function Index() {
       });
     }
   }
+
+  console.log(filialsArr);
+  
 
   useEffect(() => {
     getFilials();

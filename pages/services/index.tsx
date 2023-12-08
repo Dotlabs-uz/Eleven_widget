@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 
 import axios from "axios";
-import { Skeleton, Stack } from "@chakra-ui/react";
+import { Skeleton, Stack, useToast } from "@chakra-ui/react";
 import { ChakraProvider } from "@chakra-ui/react";
 import { AnimatePresence } from "framer-motion";
 import { AiOutlineCheck, AiOutlineRight } from "react-icons/ai";
@@ -28,6 +28,7 @@ function Index() {
   const [selectedService, setSelectedService] = useState<any>([]);
   const [duration, setDuration] = useState<number>(0);
   const [btnActive, serBtnnActive] = useState(false);
+  const toast = useToast()
 
   async function getServices() {
     try {
@@ -38,10 +39,16 @@ function Index() {
             "eyJhbGciOiJIUzI1NiIsInR5cCI6ImFjY2VzcyJ9.eyJ1c2VySWQiOiI2NTRhMmJiMjYxMGU1ZDYyMjA2OThjODkiLCJwYXRoIjoibWFuYWdlcnMiLCJpYXQiOjE2OTkzNTk2OTAsImV4cCI6MTY5OTQ0NjA5MCwiYXVkIjoiaHR0cHM6Ly95b3VyZG9tYWluLmNvbSIsImlzcyI6ImZlYXRoZXJzIiwianRpIjoiZTMwYzgzYjYtNTdhNC00ZGZkLWExMmItMGVhYzk0NzU5NTEwIn0._mO6UIe2wG2Ju3bYpeTGtpIdpZBmmY800BE_kLQ6Yng",
         },
       });
+
       setServicesArr(response.data.results);
       setActive(true);
     } catch (error) {
       console.error(error);
+      toast({
+        title: `Что-то пошло не так. Пожалуйста, попробуйте еще раз`,
+        status: "error",
+        isClosable: true,
+      });
     }
   }
 
@@ -69,6 +76,7 @@ function Index() {
   };
   
   console.log({duration});
+  
   return (
     <ChakraProvider>
       <AnimatePresence>
