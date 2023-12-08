@@ -18,7 +18,6 @@ function Index() {
 				"https://starfish-app-f4ezq.ondigitalocean.app/filials?page=1"
 			);
 
-			console.log(response);
 
 			setFilialsArr(response.data.results);
 		} catch (error) {
@@ -31,7 +30,6 @@ function Index() {
 		}
 	}
 
-	console.log(filialsArr);
 
 	useEffect(() => {
 		getFilials();

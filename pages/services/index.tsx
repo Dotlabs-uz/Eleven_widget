@@ -59,7 +59,6 @@ function Index() {
   useEffect(() => {
     getServices();
   }, []);
-  // console.log({duration}, {selectedService})
 
   const check = (item: any, e: any) => {
     if (e.target.checked === true) {
@@ -75,7 +74,6 @@ function Index() {
     }
   };
   
-  console.log({duration});
   
   return (
     <ChakraProvider>

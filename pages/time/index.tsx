@@ -115,7 +115,6 @@ function Index() {
 				) {
 					workDayStart = moment().add(5, "hours").toISOString();
 				}
-				console.log({ workDayStart });
 
 				const freeTimeSlots: any = findFreeTimeSlots(
 					busyTimes,
@@ -124,10 +123,9 @@ function Index() {
 					workDayEnd
 				);
 
-				console.log({busyTimes});
-				console.log({freeTimeSlots});
-				console.log({workDayEnd});
-
+        setMorning([])
+        setAfternoon([])
+        setEvemimg([])
 				if (freeTimeSlots.length > 0) {
 					setNotWorking(false);
 
