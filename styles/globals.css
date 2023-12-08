@@ -7,10 +7,13 @@
 * {
   scroll-behavior: smooth;
 }
-
-.bgFilialOne {
-
+.firstChild {
+  background: url("../public/images/filial1.png");
+}
+.secondChild {
   background: url("../public/images/filial2.png");
+}
+.bgFilialOne {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #5b5b5b;
