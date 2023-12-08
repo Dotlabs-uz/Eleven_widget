@@ -98,14 +98,9 @@ function Index() {
 				}
 			);
 
-			// if (response.data.result.length === 0) {
-			//   setNotWorking(true);
-			// } else {
-			//   setNotWorking(false);
-			// }
-
 			if (response.status === 200 || response.status === 201) {
 				const busyTimes = response.data.notWorking;
+				
 				let workDayStart = moment(selectDay)
 					.startOf("day")
 					.add(13, "hours")
@@ -114,7 +109,7 @@ function Index() {
 					.startOf("day")
 					.add(27, "hours")
 					.toISOString();
-				// console.log(moment(selectDay).add(10, "hours").toISOString(), "selected");
+				
 				if (
 					moment(today).format("L") === moment(selectDay).format("L")
 				) {
@@ -132,10 +127,9 @@ function Index() {
 				console.log({busyTimes});
 				console.log({freeTimeSlots});
 				console.log({workDayEnd});
-				
 
 				if (freeTimeSlots.length > 0) {
-					console.log({ freeTimeSlots });
+					setNotWorking(false);
 
 					let arrMoning = [];
 					let arrAfternoon = [];
@@ -168,10 +162,11 @@ function Index() {
 							setEvemimg(arrEvening);
 						}
 					}
+				} else {
+					setNotWorking(true);
 				}
 
 				setActive(true);
-				setNotWorking(false);
 			} else {
 				setNotWorking(true);
 				setActive(false);
