@@ -31,7 +31,7 @@ export default function Home() {
           property="og:description"
           content="Идеальное место для стильных стрижек и услуг по уходу за волосами в Самарканде."
         />
-        <meta property="og:url" content="url_to_your_website" />
+        <meta property="og:url" content="https://eleven-barbershop.uz/" />
         <meta property="og:type" content="website" />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -40,10 +40,10 @@ export default function Home() {
           name="twitter:description"
           content="Идеальное место для стильных стрижек и услуг по уходу за волосами в Самарканде."
         />
-        <meta name="twitter:image" content="url_to_your_logo_image" />
+        <meta name="twitter:image" content="https://eleven-barbershop.uz/_next/static/media/logoReal.98443783.png" />
         <meta
           property="og:image:secure_url"
-          content="https://precious-khapse-8b1959.netlify.app/_next/static/media/logoReal.98443783.png"
+          content="https://eleven-barbershop.uz/_next/static/media/logoReal.98443783.png"
         />
 
         <link
