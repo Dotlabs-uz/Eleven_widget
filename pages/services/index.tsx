@@ -26,6 +26,7 @@ function Index() {
   const [servicesArr, setServicesArr] = useState<any>([]);
   const [active, setActive] = useState(false);
   const [selectedService, setSelectedService] = useState<any>([]);
+  const [duration, setDuration] = useState<number>(0);
   const [btnActive, serBtnnActive] = useState(false);
 
   async function getServices() {
@@ -45,23 +46,19 @@ function Index() {
   }
 
   useEffect(() => {
+    setDuration(selectedService.reduce((a:any,b:any) => a + b.duration, 0))
+  }, [selectedService])
+
+  useEffect(() => {
     getServices();
   }, []);
+  // console.log({duration}, {selectedService})
 
   const check = (item: any, e: any) => {
-    let id = e.target.id;
-    let a = [];
-
     if (e.target.checked === true) {
-      a.push(item);
-      setSelectedService([...selectedService, ...a]);
-    }
-
-    for (let i = 0; i < selectedService.length; i++) {
-      if (selectedService[i]._id === id && e.target.checked === false) {
-        selectedService.splice(i, 1);
-        setSelectedService(selectedService);
-      }
+      setSelectedService([...selectedService, item]);          
+    } else {
+      setSelectedService(selectedService.filter((el:any) => el._id !== item._id));          
     }
 
     if (selectedService.length === 0) {
@@ -70,7 +67,8 @@ function Index() {
       serBtnnActive(true);
     }
   };
-
+  
+  console.log({duration});
   return (
     <ChakraProvider>
       <AnimatePresence>
@@ -224,6 +222,7 @@ function Index() {
                   barberId: searchParams.get("barberId"),
                   barberName: searchParams.get("barberName"),
                   serviceArr: JSON.stringify(selectedService),
+                  duration: duration
                 },
               }}
               aria-disabled={selectedService.length === 0 ? true : false}
