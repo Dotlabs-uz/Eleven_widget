@@ -78,7 +78,7 @@ function roundToNearestHalfHour(isoString: string) {
 	date.setSeconds(0);
 
 	const minutes = date.getMinutes();
-	const roundedMinutes = Math.round(minutes / 30) * 30;
+	const roundedMinutes = Math.ceil(minutes / 30) * 30;
 
 	date.setMinutes(roundedMinutes);
 
