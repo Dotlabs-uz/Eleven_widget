@@ -12,6 +12,7 @@ import {
   DrawerOverlay,
   DrawerContent,
   Spinner,
+  Textarea,
   useToast,
 } from "@chakra-ui/react";
 import { ChakraProvider } from "@chakra-ui/react";
@@ -37,6 +38,7 @@ function Order() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [userName, setUserName] = useState<any>("");
   const [userPhone, setUserPhone] = useState<any>("");
+  const [userDes, setUserDes] = useState<any>("");
   const [active, setActive] = useState(true);
   const [animationOrder, setAnimationOrder] = useState(false);
 
@@ -65,6 +67,7 @@ function Order() {
           client: {
             name: userName,
             phone: `+${userPhone.replace(/\D/g, "")}`,
+            // description: userDes
           },
           payments: "cash",
         })
@@ -83,6 +86,7 @@ function Order() {
 
           setUserName("");
           setUserPhone("");
+          setUserDes("")
         });
     } catch (error) {
       console.error(error);
@@ -148,9 +152,10 @@ function Order() {
                 onChange={(e: any) => setUserName(e.target.value)}
                 name="text"
                 required
+                focusBorderColor="#fff"
               />
               <InputMask
-                className="w-full mb-3 py-[16px] max-2xl:py-1 px-6 max-2xl:px-4  max-xl:py-[8px] max-xl:px-3 border text-white  border-[#D7A92D] rounded-md bg-[#101010] "
+                className="w-full mb-3 py-[16px] max-2xl:py-1 px-6 max-2xl:px-4  max-xl:py-[8px] max-xl:px-3 border text-white  border-[#D7A92D] rounded-md bg-[#101010] focus:border-[#D7A92D] "
                 mask="+\9\98 (99) 999-99-99"
                 name="phone"
                 placeholder="Напишите свой телефон"
@@ -158,6 +163,14 @@ function Order() {
                 value={userPhone}
                 onChange={(e: any) => setUserPhone(e.target.value)}
               ></InputMask>
+              <Textarea
+                placeholder="Комментарий"
+                border={"1px solid #D7A92D"}
+                outline={"none"}
+                className="mb-3 text-white "
+                onChange={(e: any) => setUserDes(e.target.value)}
+                focusBorderColor="#fff"
+              />
               <button
                 type="submit"
                 color={"white"}
