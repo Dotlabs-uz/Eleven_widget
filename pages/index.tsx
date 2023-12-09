@@ -40,7 +40,10 @@ export default function Home() {
           name="twitter:description"
           content="Идеальное место для стильных стрижек и услуг по уходу за волосами в Самарканде."
         />
-        <meta name="twitter:image" content="https://eleven-barbershop.uz/_next/static/media/logoReal.98443783.png" />
+        <meta
+          name="twitter:image"
+          content="https://eleven-barbershop.uz/_next/static/media/logoReal.98443783.png"
+        />
         <meta
           property="og:image:secure_url"
           content="https://eleven-barbershop.uz/_next/static/media/logoReal.98443783.png"
@@ -250,14 +253,11 @@ export default function Home() {
             <div className="flex w-full h-full justify-between items-center ">
               <h1 className="text-[#BBB]">Cоциальные сети</h1>
               <div className="w-[30%] h-full flex justify-end items-center gap-3 ">
-                <a href="#" target="_blank">
+                <a href="tel:+998954121111" target="_blank">
                   <LiaTelegramPlane className="text-[#BBB] text-2xl cursor-pointer transition-all duration-500 hover:text-[#FF9800] hover:scale-110 " />
                 </a>
                 <a href="https://www.instagram.com/eleven.uz/" target="_blank">
                   <BiLogoInstagram className="text-[#BBB] text-2xl cursor-pointer transition-all duration-500 hover:text-[#FF9800] hover:scale-110" />
-                </a>
-                <a href="#" target="_blank">
-                  <CiFacebook className="text-[#BBB] text-2xl cursor-pointer transition-all duration-500 hover:text-[#FF9800] hover:scale-110 " />
                 </a>
               </div>
             </div>
