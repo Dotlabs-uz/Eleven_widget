@@ -72,6 +72,18 @@ function findFreeTimeSlots(
 
 	return slots;
 }
+function roundToNearestHalfHour(isoString: string) {
+	const date = new Date(isoString);
+	date.setMilliseconds(0);
+	date.setSeconds(0);
+
+	const minutes = date.getMinutes();
+	const roundedMinutes = Math.round(minutes / 30) * 30;
+
+	date.setMinutes(roundedMinutes);
+
+	return date.toISOString();
+}
 
 function Index() {
 	let today = startOfToday();
@@ -100,7 +112,7 @@ function Index() {
 
 			if (response.status === 200 || response.status === 201) {
 				const busyTimes = response.data.notWorking;
-				
+
 				let workDayStart = moment(selectDay)
 					.startOf("day")
 					.add(13, "hours")
@@ -109,11 +121,13 @@ function Index() {
 					.startOf("day")
 					.add(27, "hours")
 					.toISOString();
-				
+
 				if (
 					moment(today).format("L") === moment(selectDay).format("L")
 				) {
-					workDayStart = moment().add(5, "hours").toISOString();
+					workDayStart = roundToNearestHalfHour(
+						moment().add(5, "hours").toISOString()
+					);
 				}
 
 				const freeTimeSlots: any = findFreeTimeSlots(
@@ -123,9 +137,9 @@ function Index() {
 					workDayEnd
 				);
 
-        setMorning([])
-        setAfternoon([])
-        setEvemimg([])
+				setMorning([]);
+				setAfternoon([]);
+				setEvemimg([]);
 				if (freeTimeSlots.length > 0) {
 					setNotWorking(false);
 
@@ -170,6 +184,8 @@ function Index() {
 				setActive(false);
 			}
 		} catch (error) {
+			console.log(error);
+
 			toast({
 				title: `Что-то пошло не так. Пожалуйста, попробуйте еще раз`,
 				status: "error",
