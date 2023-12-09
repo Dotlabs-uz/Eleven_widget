@@ -112,7 +112,7 @@ function Index() {
             </div>
           </div>
           <h1 className="text-2xl text-white mb-2 ">Парикмахерские услуги</h1>
-          <div className="w-full">
+          <div className="w-full pb-14">
             {active ? (
               servicesArr.map((item: any, index: number) => (
                 <label key={index} className="relative cursor-pointer">
@@ -121,7 +121,7 @@ function Index() {
                     animate={{ x: 0, y: 0, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.3, type: "tween" }}
                     whileTap={{ scale: 0.5 }}
-                    className="w-full h-full mt-3 mx-auto"
+                    className="w-full h-full mt-3 mx-auto  "
                     key={index}
                   >
                     <div className="w-full  h-22 rounded-2xl border-2 border-[#D7A92D] mb-3  gap-4 p-4 cursor-pointer flex items-center justify-between ">
