@@ -67,8 +67,8 @@ function Order() {
           client: {
             name: userName,
             phone: `+${userPhone.replace(/\D/g, "")}`,
-            description: userDes || ''
           },
+          description: userDes || '',
           payments: "cash",
         })
         .then((res) => {
