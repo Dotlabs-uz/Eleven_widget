@@ -34,11 +34,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Барбершоп Eleven в Самарканде - ваш идеальный выбор для стильных стрижек и услуг по уходу за внешностью."
+          content="Барбершоп eleven в Самарканде - ваш идеальный выбор для стильных стрижек и услуг по уходу за внешностью."
         />
         <meta
           name="keywords"
-          content="Eleven Barbershop, Самарканд, стрижки, уход, услуги парикмахера"
+          content="eleven Barbershop, Самарканд, стрижки, уход, услуги парикмахера"
         />
         <meta name="author" content="Your Name or Barbershop Owner's Name" />
 
