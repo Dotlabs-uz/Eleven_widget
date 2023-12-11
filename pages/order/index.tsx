@@ -68,7 +68,7 @@ function Order() {
             name: userName,
             phone: `+${userPhone.replace(/\D/g, "")}`,
           },
-          description: userDes || '',
+          description: userDes || "",
           payments: "cash",
         })
         .then((res) => {
@@ -86,7 +86,7 @@ function Order() {
 
           setUserName("");
           setUserPhone("");
-          setUserDes("")
+          setUserDes("");
         });
     } catch (error) {
       console.error(error);
@@ -129,11 +129,7 @@ function Order() {
     <ChakraProvider>
       <div className="flex flex-col h-full max-w-[600px]  mx-auto  justify-center items-center   bg-[#101010] pb-4   ">
         <Head>
-          <link
-            rel="shortcut icon"
-            href="/images/logoReal.svg"
-            type="image/x-icon"
-          />
+          <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
           <title>eleven 11</title>
         </Head>
         <Nav />

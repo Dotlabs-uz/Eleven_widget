@@ -18,11 +18,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="eleven Barbershop in Samarkand - Your go-to destination for stylish haircuts and grooming services."
+          content="Барбершоп Eleven в Самарканде - ваш идеальный выбор для стильных стрижек и услуг по уходу за внешностью."
         />
         <meta
           name="keywords"
-          content="eleven Barbershop, Samarkand, haircuts, grooming, barber services"
+          content="Eleven Barbershop, Самарканд, стрижки, уход, услуги парикмахера"
         />
         <meta name="author" content="Your Name or Barbershop Owner's Name" />
 
@@ -34,8 +34,6 @@ export default function Home() {
         <meta property="og:url" content="https://eleven-barbershop.uz/" />
         <meta property="og:type" content="website" />
 
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="eleven Barbershop - Samarkand" />
         <meta
           name="twitter:description"
           content="Идеальное место для стильных стрижек и услуг по уходу за волосами в Самарканде."
@@ -49,11 +47,7 @@ export default function Home() {
           content="https://eleven-barbershop.uz/_next/static/media/logoReal.98443783.png"
         />
 
-        <link
-          rel="shortcut icon"
-          href="/images/logoReal.svg"
-          type="image/x-icon"
-        />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <title>eleven 11</title>
       </Head>
       <div className="w-full mx-auto flex h-20 justify-between items-center filialsBg px-7 sm:px-10 py-2 ">

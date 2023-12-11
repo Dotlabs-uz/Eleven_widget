@@ -28,7 +28,7 @@ function Index() {
   const [selectedService, setSelectedService] = useState<any>([]);
   const [duration, setDuration] = useState<number>(0);
   const [btnActive, serBtnnActive] = useState(false);
-  const toast = useToast()
+  const toast = useToast();
 
   async function getServices() {
     try {
@@ -53,8 +53,8 @@ function Index() {
   }
 
   useEffect(() => {
-    setDuration(selectedService.reduce((a:any,b:any) => a + b.duration, 0))
-  }, [selectedService])
+    setDuration(selectedService.reduce((a: any, b: any) => a + b.duration, 0));
+  }, [selectedService]);
 
   useEffect(() => {
     getServices();
@@ -62,9 +62,11 @@ function Index() {
 
   const check = (item: any, e: any) => {
     if (e.target.checked === true) {
-      setSelectedService([...selectedService, item]);          
+      setSelectedService([...selectedService, item]);
     } else {
-      setSelectedService(selectedService.filter((el:any) => el._id !== item._id));          
+      setSelectedService(
+        selectedService.filter((el: any) => el._id !== item._id)
+      );
     }
 
     if (selectedService.length === 0) {
@@ -73,18 +75,13 @@ function Index() {
       serBtnnActive(true);
     }
   };
-  
-  
+
   return (
     <ChakraProvider>
       <AnimatePresence>
         <div className="w-full h-full max-w-[600px] mx-auto px-3 relative ">
           <Head>
-            <link
-              rel="shortcut icon"
-              href="/images/logoReal.svg"
-              type="image/x-icon"
-            />
+            <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
             <title>eleven 11</title>
           </Head>
           <div className=" flex items-center gap-2 w-full py-2  border-b-2 border-[#D7A92D] mb-3 ">
@@ -132,7 +129,10 @@ function Index() {
                         <div className="w-full flex items-center gap-3 ">
                           <h2 className="text-white text-lg ">
                             {/* {item.price} сум.{" "} */}
-                            {new Intl.NumberFormat("en-DE").format(item.price)} сум.
+                            {new Intl.NumberFormat("en-DE").format(
+                              item.price
+                            )}{" "}
+                            сум.
                           </h2>
                           <span className="text-[#808080]">
                             {item.duration} мин{" "}
@@ -229,7 +229,7 @@ function Index() {
                   barberId: searchParams.get("barberId"),
                   barberName: searchParams.get("barberName"),
                   serviceArr: JSON.stringify(selectedService),
-                  duration: duration
+                  duration: duration,
                 },
               }}
               aria-disabled={selectedService.length === 0 ? true : false}

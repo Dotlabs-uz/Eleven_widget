@@ -57,11 +57,7 @@ function Index() {
       <AnimatePresence>
         <div className="w-full ">
           <Head>
-            <link
-              rel="shortcut icon"
-              href="/images/logoReal.svg"
-              type="image/x-icon"
-            />
+            <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
             <title>eleven 11</title>
           </Head>
           <div className="w-full h-full max-w-[600px] mx-auto px-3  ">
