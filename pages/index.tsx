@@ -40,7 +40,7 @@ export default function Home() {
           name="keywords"
           content="eleven Barbershop, Самарканд, стрижки, уход, услуги парикмахера"
         />
-        <meta name="author" content="Your Name or Barbershop Owner's Name" />
+        <meta name="author" content="Бобур Вафаев" />
 
         <meta
           property="og:description"
