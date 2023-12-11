@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="w-full h-full max-w-[1400px]  mx-auto bg-white customBg ">
       <Head>
-        <meta charSet="UTF-8" />
+        {/* <meta charSet="UTF-8" />
         <meta
           name="description"
           content="eleven Barbershop - ваш лучший выбор для стильных стрижек и ухода за внешностью в Самарканде."
@@ -49,7 +49,7 @@ export default function Home() {
         <meta property="og:url" content="https://eleven-barbershop.uz/" />
         <meta property="og:type" content="website" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <title>eleven 11</title>
+        <title>eleven 11</title> */}
       </Head>
       <div className="w-full mx-auto flex h-20 justify-between items-center filialsBg px-7 sm:px-10 py-2 ">
         <div className="logo flex items-center gap-4 h-full ">
