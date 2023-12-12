@@ -23,7 +23,11 @@ function Index() {
   async function getServices() {
     try {
       const response = await axios.get(
-        "https://starfish-app-f4ezq.ondigitalocean.app/barbers"
+        "https://starfish-app-f4ezq.ondigitalocean.app/barbers", {
+          params: {
+            limit: 100
+          }
+        }
       );
 
       let bar = [];
