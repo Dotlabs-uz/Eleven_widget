@@ -8,16 +8,19 @@
   scroll-behavior: smooth;
 }
 .firstChild {
-  background: url("../public/images/filial1.png");
+  background: url("../public/images/filial1.JPEG");
+  background-position: center 50%;
+  background-size: contain;
+
 }
 .secondChild {
   background: url("../public/images/filial2.png");
+  background-position: center 80%;
 }
 .bgFilialOne {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #5b5b5b;
-  background-position: center 80%;
 }
 
 .bgFilialOne::before {
@@ -25,28 +28,13 @@
   display: block;
   width: 100%;
   height: 100%;
-  background-color: #604f3d67;
+  background-color: #604f3d7d;
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0.6;
   z-index: 5;
   border-radius: 8px;
-}
-
-
-
-.bgFilialTwo::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: #5b6aa6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.2;
-  z-index: 5;
 }
 
 .bgSkeleton {
