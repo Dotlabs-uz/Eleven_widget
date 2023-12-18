@@ -115,7 +115,7 @@ function Index() {
 
         let workDayStart = moment(selectDay)
           .startOf("day")
-          .add(13, "hours")
+          .add(15, "hours")
           .toISOString();
         const workDayEnd = moment(selectDay)
           .startOf("day")
